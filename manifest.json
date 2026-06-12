@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Tab Reloader",
+  "version": "1.0",
+  "description": "Reloads the active tab after a random interval between 0 and 5 minutes.",
+  "permissions": ["alarms", "tabs", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Auto Tab Reloader"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

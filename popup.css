@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  width: 240px;
+  min-height: 180px;
+}
+
+.container {
+  padding: 18px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #cba6f7;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #585b70;
+  transition: background 0.3s;
+  flex-shrink: 0;
+}
+
+.dot.active {
+  background: #a6e3a1;
+  box-shadow: 0 0 6px #a6e3a1aa;
+}
+
+.status-text {
+  font-size: 13px;
+  color: #a6adc8;
+}
+
+.countdown {
+  font-size: 22px;
+  font-weight: 700;
+  color: #89dceb;
+  letter-spacing: 0.04em;
+  min-height: 28px;
+  text-align: center;
+}
+
+.loop-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #a6adc8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.loop-label input[type="checkbox"] {
+  accent-color: #cba6f7;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.btn-row {
+  margin-top: 2px;
+}
+
+.btn {
+  width: 100%;
+  padding: 9px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-start {
+  background: #cba6f7;
+  color: #1e1e2e;
+}
+
+.btn-stop {
+  background: #f38ba8;
+  color: #1e1e2e;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.note {
+  font-size: 11px;
+  color: #585b70;
+  text-align: center;
+}

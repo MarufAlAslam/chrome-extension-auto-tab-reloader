@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Tab Reloader</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Auto Tab Reloader</h1>
+
+    <div class="status-row">
+      <span class="dot" id="dot"></span>
+      <span class="status-text" id="statusText">Inactive</span>
+    </div>
+
+    <div class="countdown" id="countdown"></div>
+
+    <label class="loop-label">
+      <input type="checkbox" id="loopCheckbox" checked />
+      Repeat after each reload
+    </label>
+
+    <div class="btn-row">
+      <button class="btn btn-start" id="startBtn">Start</button>
+      <button class="btn btn-stop hidden" id="stopBtn">Stop</button>
+    </div>
+
+    <p class="note">Random delay: 0 – 5 minutes</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
